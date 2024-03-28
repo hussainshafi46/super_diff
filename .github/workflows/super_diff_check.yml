@@ -35,8 +35,6 @@ jobs:
           log-output-if: failure
       - name: Check Ruby
         run: echo ${{ matrix.ruby }}
-      - name: Check BUNDLE_GEMFILE
-        run: echo ${{ BUNDLE_GEMFILE }}
       - name: Check bundle
         run: bundle list
       - name: Run test
