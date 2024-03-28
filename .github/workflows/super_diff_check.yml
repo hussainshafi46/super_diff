@@ -10,7 +10,7 @@ jobs:
         ruby:
           - "3.2"
         rails_appraisal:
-          - rails_7_0
+          - rails_6_1
         rspec_appraisal:
           - rspec_lt_3_10
     steps:
