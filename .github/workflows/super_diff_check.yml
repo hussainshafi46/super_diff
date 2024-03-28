@@ -43,6 +43,8 @@ jobs:
           - rails_6_1
         rspec_appraisal:
           - rspec_lt_3_10
+    env:
+      BUNDLE_GEMFILE: gemfiles/${{ matrix.rails_appraisal }}_${{ matrix.rspec_appraisal }}.gemfile
     steps:
       - uses: actions/checkout@v4
       - name: Set up Ruby
