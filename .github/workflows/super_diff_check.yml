@@ -24,6 +24,8 @@ jobs:
           bundler-cache: true
       - name: Check Ruby
         run: echo ${{ matrix.ruby }}
+      - name: Check Gemfile
+        run: cat gemfiles/${{ matrix.rails_appraisal }}_${{ matrix.rspec_appraisal }}.gemfile
       - name: Check bundle
         run: bundle list
       - name: Run test
