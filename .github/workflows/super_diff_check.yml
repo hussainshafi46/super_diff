@@ -11,7 +11,10 @@ jobs:
           - "3.2"
         rails_appraisal:
           - rails_6_1
+          - rails_7_0
+          - no_rails
         rspec_appraisal:
+          - rspec_lt_3_10
           - rspec_gte_3_10
     steps:
       - uses: actions/checkout@v4
